@@ -1,0 +1,13 @@
+<h2>Recipe Box</h2>
+
+<ul>
+    {% for recipe in data %}
+        <li>
+            <a href="/recipe/{{recipe.id}}">{{ recipe.title }} | by {{ recipe.author.name }}</a>
+
+        </li>
+
+    {% endfor %}
+</ul>
+
+

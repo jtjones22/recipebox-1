@@ -1,0 +1,11 @@
+<h2> Recipes by {{recipes.authors.name}}</h2>
+<ul>
+    {% for recipe in recipes %}
+    <li>
+        <h3>
+            <a href="/recipe/{{recipe.id}}"> {{ recipe.title }} </a>
+        </h3>
+    </li>
+    {% endfor %}
+</ul>
+
