@@ -8,7 +8,7 @@ class Author(models.Model):
     def __str__(self):
         return self.name
     def url(self):
-        return f"/authors/{self.id}"
+        return f"/author/{self.id}"
 
 
 
@@ -22,4 +22,4 @@ class Recipe(models.Model):
     def __str__(self):
         return self.title
     def url(self):
-        return f"/recipes/{self.id}"
+        return f"/recipe/{self.id}"
