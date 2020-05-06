@@ -2,14 +2,14 @@ from django.shortcuts import render, reverse, HttpResponseRedirect
 
 from recipes.models import Recipe
 from recipes.models import Author
-from recipes.forms import RecipeAddForm
+from recipes.forms import RecipeAddForm, AuthorAddForm
 
 # Create your views here.
 def index(request):
     recipes = Recipe.objects.all()
     return render(request, 'index.html', {'recipes': recipes})
 
-def author_detail(request, author_id):
+def author(request, author_id):
     author = Author.objects.get(id=author_id)
     recipes = Recipe.objects.filter(author==author)
     return render(request, 'author_detail.html', {
@@ -48,3 +48,15 @@ def recipeadd(request):
     form = RecipeAddForm()
 
     return render(request, html, {"form": form})
+
+def authoradd(request):
+    html = 'authoraddform.html'
+
+    if request.method == 'POST':
+        form = AuthorAddForm(request.POST)
+        form.save()
+        return HttpResponseRedirect(reverse('homepage'))
+
+    form = AuthorAddForm()
+
+    return render(request, html, {'form': form})
