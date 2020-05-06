@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/templates/authoraddform.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/templates/addauthorform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/templates/recipeaddform.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/templates/addrecipeform.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/views.py" afterDir="false" />
     </list>
