@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="" />
+    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipebox/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipebox/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipebox/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipebox/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/templates/author_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/templates/author_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/templates/recipe_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/templates/recipe_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bKKGMRg2Bp8nUDxykNkw4JuKmI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -49,9 +61,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1588375257929" />
-    <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1588393512782">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="840" y="791" width="838" height="727" key="search.everywhere.popup" timestamp="1588721866103">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1588393512782" />
+    <state x="840" y="791" width="838" height="727" key="search.everywhere.popup/0.23.1280.727@0.23.1280.727" timestamp="1588721866103" />
   </component>
 </project>
