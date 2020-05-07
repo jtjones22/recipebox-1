@@ -1,7 +1,6 @@
-
-
 <h1>The Recipe Box</h1>
 
+Are you logged in?  {{ request.user.is_authenticated }}
 <h3>Our current recipes:</h3>
 <ul>
     {% for recipe in recipes %}
@@ -23,3 +22,7 @@
 <h3>
     <a href="/addauthor/">Add a chef here!</a>
 </h3>
+
+<button>Logout here!
+    <a href="/logout/"></a>
+</button>

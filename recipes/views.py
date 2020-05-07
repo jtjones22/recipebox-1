@@ -1,5 +1,6 @@
 from django.shortcuts import render, reverse, HttpResponseRedirect
 from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.decorators import login_required
 
 from recipes.models import Recipe, Author
 from recipes.forms import AddRecipeForm, AddAuthorForm, LoginForm
@@ -15,9 +16,16 @@ def login_view(request):
             )
             if user:
                 login(request, user)
-                return HttpResponseRedirect(reverse('Homepage'))
+                return HttpResponseRedirect(
+                    request.GET.get('next', reverse('Homepage'))
+                )
     form = LoginForm()
-    return render(request, 'genericform.html')
+    return render(request, 'genericform.html', {'form': form})
+
+
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('Homepage'))
 
 
 def index(request):
@@ -38,7 +46,7 @@ def recipe_detail(request, recipe_id):
     recipes = Recipe.objects.get(id=recipe_id)
     return render(request, 'recipe_detail.html', {'recipes': recipes})
 
-
+@login_required
 def add_recipe(request):
     html = "genericform.html"
 
@@ -60,7 +68,7 @@ def add_recipe(request):
 
     return render(request, html, {"form": form})
 
-
+@login_required
 def add_author(request):
     html = 'genericform.html'
 

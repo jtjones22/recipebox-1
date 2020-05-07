@@ -8,5 +8,6 @@ urlpatterns = [
     path('recipe/<int:recipe_id>/', views.recipe_detail),
     path('addrecipe/', views.add_recipe),
     path('addauthor/', views.add_author),
-    path('login/', views.login_view)
+    path('login/', views.login_view),
+    path('logout/', views.logout_view)
 ]
