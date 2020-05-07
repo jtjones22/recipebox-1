@@ -1,12 +1,12 @@
-<h2>Recipe Directions: {{ recipe.title}}</h2>
+<h2>This is how you make: {{recipes.title}}</h2>
 
-<h3>by <a href="/author/{{recipe.author.id}}">{{recipe.author.name}}</a></h3>
-<p>{{ recipe.description }}</p>
-<h4>Time Required: {{ recipe.time_required }}</h4>
+<h3>by <a href="/author/{{ recipes.authors.id }}"></a> {{ recipes.authors.name }} </h3>
+<h4>What you're making: {{ recipes.description }}</h4>
+<h4>Time Required: {{ recipes.time_required }}</h4>
 <ul>
 
         <h2>Instructions:</h2>
-        <p> {{ recipe.instructions }}
+        <p> {{ recipes.instructions }}
 
 
 </ul>
