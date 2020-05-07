@@ -26,7 +26,7 @@ def recipe_detail(request, recipe_id):
 
 
 def add_recipe(request):
-    html = 'addrecipeform.html'
+    html = "addrecipeform.html"
 
     if request.method == "POST":
         form = AddRecipeForm(request.POST)
