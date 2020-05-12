@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,10 +43,15 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="81" y="0" key="SettingsEditor" timestamp="1588379871939">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="130" y="23" key="SettingsEditor" timestamp="1589310257452">
+      <screen x="0" y="23" width="2048" height="1057" />
     </state>
     <state x="81" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588379871939" />
+    <state x="130" y="23" key="SettingsEditor/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589310257452" />
+    <state x="424" y="151" width="1200" height="800" key="ShowDiffWithBranchDialog" timestamp="1589310234691">
+      <screen x="0" y="23" width="2048" height="1057" />
+    </state>
+    <state x="424" y="151" width="1200" height="800" key="ShowDiffWithBranchDialog/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589310234691" />
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1588795624688">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
