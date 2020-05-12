@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="" />
+    <list default="true" id="17f7ba86-6013-4d60-a92d-30f8801d924f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bKKGMRg2Bp8nUDxykNkw4JuKmI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -18,7 +23,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -39,18 +45,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="488" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589309734827">
+      <screen x="0" y="23" width="2048" height="1057" />
+    </state>
+    <state x="488" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589309734827" />
     <state x="343" y="195" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588814057386">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="343" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1588814057386" />
-    <state x="81" y="0" key="SettingsEditor" timestamp="1588379871939">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="563" y="204" key="SettingsEditor" timestamp="1589309742437">
+      <screen x="0" y="23" width="2048" height="1057" />
     </state>
     <state x="81" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588379871939" />
-    <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1588375257929">
-      <screen x="0" y="23" width="1280" height="727" />
+    <state x="563" y="204" key="SettingsEditor/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589309742437" />
+    <state x="507" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1589308994097">
+      <screen x="0" y="23" width="2048" height="1057" />
     </state>
     <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1588375257929" />
+    <state x="507" y="308" key="com.intellij.ide.util.TipDialog/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589308994097" />
     <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1588393512782">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
