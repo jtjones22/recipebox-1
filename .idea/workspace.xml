@@ -23,8 +23,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+>>>>>>> ce03bfb8acdba71b7eae2e4d05c9a42f11ab0605
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,6 +50,7 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="488" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589309734827">
       <screen x="0" y="23" width="2048" height="1057" />
     </state>
@@ -65,7 +71,20 @@
     <state x="507" y="308" key="com.intellij.ide.util.TipDialog/2048.23.3840.2137/0.23.2048.1057@0.23.2048.1057" timestamp="1589308994097" />
     <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1588393512782">
       <screen x="0" y="0" width="1280" height="800" />
+=======
+    <state x="81" y="0" key="SettingsEditor" timestamp="1588379871939">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="81" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1588379871939" />
+    <state x="317" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1588795624688">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="317" y="219" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1588795624688" />
+    <state x="840" y="791" width="838" height="727" key="search.everywhere.popup" timestamp="1588721866103">
+      <screen x="0" y="23" width="1280" height="727" />
+>>>>>>> ce03bfb8acdba71b7eae2e4d05c9a42f11ab0605
     </state>
     <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1588393512782" />
+    <state x="840" y="791" width="838" height="727" key="search.everywhere.popup/0.23.1280.727@0.23.1280.727" timestamp="1588721866103" />
   </component>
 </project>
