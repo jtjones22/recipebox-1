@@ -1,6 +1,25 @@
 <h1>The Recipe Box</h1>
 
-Are you logged in?  {{ request.user.is_authenticated }}
+<br>
+<br>
+Current chef?
+{% if not request.user.is_authenticated %}
+
+        <a href="/login/">
+        <button> Login here!</button>
+        </a>
+
+{% endif %}
+<br>
+Want to sign up to add recipes?
+{% if not request.user.is_authenticated %}
+
+        <a href="/signup/">
+            <button>Sign up here!
+            </button>
+        </a>
+{% endif %}
+
 <h3>Our current recipes:</h3>
 <ul>
     {% for recipe in recipes %}
@@ -19,10 +38,19 @@ Are you logged in?  {{ request.user.is_authenticated }}
 <h3>
     <a href="/addrecipe/">Add a recipe here!</a>
 </h3>
+<br>
+
+{% if request.user.is_authenticated %}
 <h3>
     <a href="/addauthor/">Add a chef here!</a>
 </h3>
+{% endif %}
 
-<button>Logout here!
-    <a href="/logout/"></a>
-</button>
+{% if request.user.is_authenticated %}
+
+        <a href="/logout/">
+            <button>Logout here!</button>
+        </a>
+
+{% endif %}
+
