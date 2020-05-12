@@ -24,4 +24,8 @@ class LoginForm(forms.Form):
 	password = forms.CharField(widget=forms.PasswordInput)
 
 
-class CreateNewUserForm(forms.Form):
+class NewUserForm(forms.Form):
+	username = forms.CharField(max_length=50)
+	password = forms.CharField(widget=forms.PasswordInput)
+	name = forms.CharField(max_length= 30)
+
