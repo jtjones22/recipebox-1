@@ -40,7 +40,7 @@ Want to sign up to add recipes?
 </h3>
 <br>
 
-{% if request.user.is_authenticated %}
+{% if request.user.is_staff %}
 <h3>
     <a href="/addauthor/">Add a chef here!</a>
 </h3>

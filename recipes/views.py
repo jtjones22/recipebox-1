@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
 from recipes.models import Recipe, Author
-from recipes.forms import AddRecipeForm, AddAuthorForm, LoginForm, SignUpForm
+from recipes.forms import AddRecipeForm, AddAuthorForm, LoginForm
 
 # Create your views here.
 def login_view(request):
