@@ -68,6 +68,7 @@ def add_recipe(request):
 
     return render(request, html, {"form": form})
 
+@login_required
 def add_author(request):
     html = 'genericform.html'
 
