@@ -1,0 +1,19 @@
+<h2>Favorite Page</h2>
+<a href="{% url 'Homepage' %}">Home Page</a>
+{% for recipe in recipes %}
+<h2>This is how you make: {{ recipe.title}}</h2>
+{% if request.user.id == recipe.author.id or request.user.is_staff %}
+<a href="{% url 'edit_recipe' recipe.id %}">Edit Recipe</a>
+{% endif %}
+<h3>by <a href="/author/{{ recipe.author.id }}" >{{ recipe.author }}</a>  </h3>
+<h4>What you're making: {{ recipe.description }}</h4>
+<h4>Time Required: {{ recipe.time_required }}</h4>
+<ul>
+
+        <h2>Instructions:</h2>
+        <p> {{ recipe.instructions }}
+
+
+</ul>
+<hr>
+{% endfor %}

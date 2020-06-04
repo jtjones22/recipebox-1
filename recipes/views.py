@@ -1,4 +1,6 @@
-from django.shortcuts import render, reverse, HttpResponseRedirect
+from django.shortcuts import render, reverse, HttpResponseRedirect, redirect
+from django.contrib.auth.decorators import login_required
+
 
 from recipes.models import Recipe
 from recipes.models import Author
@@ -57,3 +59,55 @@ def add_author(request):
     form = AddAuthorForm()
 
     return render(request, html, {'form': form})
+
+@login_required
+def edit_recipe_view(request, recipe_id):
+    html = 'edit_recipe.html'
+    recipe = Recipe.objects.get(id=recipe_id)
+    if request.user.id == recipe.author.id or request.user.is_staff:
+        if request.method == 'POST':
+            form = AddRecipeForm(request.POST)
+            if form.is_valid():
+                data = form.cleaned_data
+                recipe.title = data['title']
+                recipe.description = data['description']
+                recipe.time_required = data['time_required']
+                recipe.instructions = data['instructions']
+                recipe.save()
+                return HttpResponseRedirect(reverse('recipe_detail', args=(recipe_id,)))
+        form = AddRecipeForm(initial={
+            'title': recipe.title,
+            'author': recipe.author,
+            'description': recipe.description,
+            'time_required': recipe.time_required,
+            'instructions': recipe.instructions
+        })
+        context = {'form': form}
+        return render(request, html, context)
+    else:
+        return HttpResponseRedirect(reverse('recipe_detail', args=(recipe_id,)))
+
+
+@login_required
+def favorite(request, recipe_id):
+    recipe = Recipe.objects.get(id=recipe_id)
+    user = request.user.id
+    recipe.favorited_by.add(user)
+    recipe.save()
+    return HttpResponseRedirect(reverse('recipe_detail', args=(recipe_id,)))
+
+
+@login_required
+def unfavorite(request, recipe_id):
+    recipe = Recipe.objects.get(id=recipe_id)
+    user = request.user.id
+    recipe.favorited_by.remove(user)
+    recipe.save()
+    return HttpResponseRedirect(reverse('recipe_detail', args=(recipe_id,)))
+
+
+def favorites(request, user_id):
+    html = 'favorites.html'
+    recipes = Recipe.objects.filter(favorited_by=user_id)
+    context = {'recipes': recipes}
+    return render(request, html, context)

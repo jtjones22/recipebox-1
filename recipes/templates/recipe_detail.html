@@ -1,5 +1,7 @@
 <h2>This is how you make: {{recipes.title}}</h2>
-
+{% if request.user.id == recipes.author.id or request.user.is_staff %}
+<a href="{% url 'edit_recipe' recipes.id %}">Edit Recipe</a>
+{% endif %}
 <h3>by <a href="/author/{{ recipes.author.id }}" >{{ recipes.author.name }}</a>  </h3>
 <h4>What you're making: {{ recipes.description }}</h4>
 <h4>Time Required: {{ recipes.time_required }}</h4>
@@ -10,3 +12,11 @@
 
 
 </ul>
+
+{% if request.user.is_active %}
+{% if request.user.author in recipes.favorited_by.all %}
+<h3><a href="{% url 'unfavorite' recipes.id %}">**Unfavorite this recipe**</a></h3>
+{% else %}
+<h3><a href="{% url 'favorite' recipes.id %}">**Favorite this recipe**</a></h3>
+{% endif %}
+{% endif %}

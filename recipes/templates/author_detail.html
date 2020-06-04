@@ -2,6 +2,8 @@
 <br>
 <h3>Bio: {{author.bio}}</h3>
 <br>
+<h4><a href="{% url 'favorites' author.id %}">Favorite Recipes</a></h4>
+<hr>
 <h4>My recipes:</h4>
 <ul>
     {% for recipe in recipes %}
